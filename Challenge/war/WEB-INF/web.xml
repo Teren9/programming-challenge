@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-class>challenge.GuideServlet</servlet-class>
+		<servlet-name>guideServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>guideServlet</servlet-name>
+		<url-pattern>/Guide</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-class>challenge.FirstServlet</servlet-class>
+		<servlet-name>firstServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>firstServlet</servlet-name>
+		<url-pattern>/nouxzrtfe</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.SecondServlet</servlet-class>
+		<servlet-name>secondServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>secondServlet</servlet-name>
+		<url-pattern>/iouhiagfd</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.ThirdServlet</servlet-class>
+		<servlet-name>thirdServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>thirdServlet</servlet-name>
+		<url-pattern>/asdfinuh</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.ThirdJavaScriptServlet</servlet-class>
+		<servlet-name>thirdJSServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>thirdJSServlet</servlet-name>
+		<url-pattern>/thirdJS</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.FourthServlet</servlet-class>
+		<servlet-name>fourthServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fourthServlet</servlet-name>
+		<url-pattern>/onhpuhoin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.FourthServletAux</servlet-class>
+		<servlet-name>fourthServletAux</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fourthServletAux</servlet-name>
+		<url-pattern>/onhpuhoin2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-class>challenge.FifthServlet</servlet-class>
+		<servlet-name>fifthServlet</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fifthServlet</servlet-name>
+		<url-pattern>/fdsuiogre</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Challenge.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

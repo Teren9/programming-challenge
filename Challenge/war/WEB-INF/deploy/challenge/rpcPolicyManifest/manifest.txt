@@ -1,0 +1,3 @@
+# Module challenge
+# RPC service class, partial path of RPC policy file
+challenge.client.GreetingService, 8617B3DC6F3420AD5283BC67D639D5A0.gwt.rpc

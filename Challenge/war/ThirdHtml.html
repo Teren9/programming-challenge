@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" language="javascript" src="/thirdJS"></script>
+<body>
+	<h1>Totally hackable</h1>
+	<p>
+		Please enter the password.<br />This time, it's a very long password,
+		with 10 digits, so the previous trick isn't going to work. <br />However,
+		whoever wrote this page wasn't very clever. Maybe you can find the
+		trick?
+	</p>
+
+	<textarea id="bar">enter input here</textarea>
+	<button type="button" onclick="myFunction()">Try it</button>
+
+	<script>
+function myFunction() {
+	var t=document.getElementById("bar").value;
+	var pass=getPassword();
+	var s = "var result = pass==\""+t+"\"";
+	eval(s);
+    showResult(result);
+}
+
+</script>
+
+</body>
+</html>
