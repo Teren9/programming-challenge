@@ -1,17 +1,17 @@
 package challenge;
 
 import com.google.gwt.core.client.EntryPoint;
-
 /**
- * Entry point classes define <code>onModuleLoad()</code>.
+ * Here for technical reasons. Keep this way - doesn't matter.
+ * @author Assaf Mushkin assaf.mushkin@gmail.com
+ *
  */
 public class Challenge implements EntryPoint {
 
-	/**
-	 * This is the entry point method.
-	 */
 	public void onModuleLoad() {
-
+/*
+ * Keep empty.
+ */
 
 	}
 }
