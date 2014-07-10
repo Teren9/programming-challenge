@@ -33,6 +33,7 @@ public class GuideServlet extends HttpServlet {
 		}
 		urlToLastFileMap.put("aaa", GUIDES+"GuideGuide.html");
 		urlToLastFileMap.put(URLS.URLS[1], GUIDES+"FirstGuide.html");
+		urlToLastFileMap.put(URLS.URLS[3], GUIDES+"ThirdGuide.html");
 		
 	}
 	

@@ -1,0 +1,55 @@
+<html>
+<head></head>
+<body>
+	<h3>Solutions</h3>
+	<p>
+	<ul>
+		<li>Javascript Injection. Send a specific input, that causes
+			unexpected behavior, and gets you the answer.</li>
+		<li>Opening a JS console (inside the page) and running the
+			appropriate function.</li>
+		<li>Other?</li>
+	</ul>
+	</p>
+	<h3>More information</h3>
+	<p>
+		The webpage for this challenge contained something new - Javascript! <br />
+		This was found in the
+		<code>&lt;script&gt;</code>
+		element. The script had one function, which was called when the submit
+		button was clicked. <br /> This function was the key - it read the
+		input from the user, and tried to compare it to the password - but
+		very, very badly. <br />
+	</p>
+	<p>
+		Instead of something simple, such as
+		<code>"result= pass == t"</code>
+		, it went the roundabout way, of creating a new string, and trying to
+		evaluate it. <br />This allowed you to enter whatever you wanted, and
+		have the script do that! Sure, you needed to engineer the input so it
+		fits the syntax, but it works.<br />This is a huge weakness, a common
+		one, and the main reason to always check user input.
+	</p>
+	<p>
+	This was a extreme example - indeed, the simple alternative shown above would work, and is more intuitive. <br/>
+	Though it would seem to be a weakness of the JavaScript, the problem shown here is the symptom of a deeper one - <b>the user is pure evil, and only you can protect your software.</b> It might not be as obvious as JS Injection, but whenever you deal with user input, expect the worst, and count on being surprised. <br/> 
+	</p>
+	<p>
+		Injections aren't limited to Javascript. Whenever there is a
+		programmer who doesn't sanitize (check) the user's input, there be
+		injections. <br />In SQL, a database manipulation language,
+		injections are commonly known, since SQL statements and queries are
+		often built around the user's input. <a href="http://xkcd.com/327/">XKCD
+			example.</a><br /> Injections aren't alone - in C, you might be tempted
+		to read the input from the user, into your 40-character buffer. What
+		happens when the user input is more then 40? <a
+			href="http://en.wikipedia.org/wiki/Buffer_overflow">Terrible</a>
+		things.<br /> In more recent news, the famous <a
+			href="http://en.wikipedia.org/wiki/Heartbleed>">Heartbleed</a> bug
+		was caused by a similar problem - again, <a
+			href="http://xkcd.com/1354/">XKCD</a> explains it best. In essence,
+		the bug was caused by not checking the size of the answer requested,
+		and internet madness occurred.
+	</p>
+</body>
+</html>

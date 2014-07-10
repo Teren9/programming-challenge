@@ -10,12 +10,12 @@
 		trick?
 	</p>
 
-	<textarea id="bar">enter input here</textarea>
+	<textarea id="input">enter input here</textarea>
 	<button type="button" onclick="myFunction()">Try it</button>
 
 	<script>
 function myFunction() {
-	var t=document.getElementById("bar").value;
+	var t=document.getElementById("input").value;
 	var pass=getPassword();
 	var s = "var result = pass==\""+t+"\"";
 	eval(s);
